@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Planets',
-    'description': 'planets info',
+    'name': 'Custom Sale',
+    'description': 'add fields to module sale',
     'author': 'Eduard Montano',
-    'category': 'Base',
+    'category': 'sale',
     'version': '16.0.0.1',
     'depends': ['base'], ## archivos o modelos dependientes algunas otras fucnionalidades
     # 'data': [
