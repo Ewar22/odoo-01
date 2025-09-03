@@ -1,17 +1,16 @@
-# -*- coding: utf-8 -*-
+# __manifest__.py
 {
-    'name': 'Custom Sale',
-    'description': 'add fields to module sale',
+    'name': 'Custom Sales',
+    'description': 'Personalización de ventas', 
     'author': 'Eduard Montano',
-    'category': 'sale',
+    'category': 'Sales',  # ✅ Debe ser 'Sales'
     'version': '16.0.0.1',
-    'depends': ['base'], ## archivos o modelos dependientes algunas otras fucnionalidades
-    # 'data': [
-
-    #     'views/grades_course_views.xml',
-    # ], ## vistas
+    'depends': ['sale'],  # ✅ DEBE DEPENDER DE SALE
+    'data': [
+        'views/custom_sale_order_view.xml',
+    ],
     'license': 'AGPL-3',
-    'application': True,
+    'application': True,  # ✅ DEBE SER TRUE
     'installable': True,
     'auto_install': False,
 }

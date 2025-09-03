@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="view_order_form_custom" model="ir.ui.view">
+        <field name="name">sale.order.form.custom</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Agregar el campo priority después de date_order -->
+            <xpath expr="//field[@name='date_order']" position="after">
+                <field name="priority" 
+                       class="oe_inline"
+                       widget="radio" 
+                       options="{'horizontal': true}"/>
+            </xpath>
+            
+        </field>
+    </record>
+
+</odoo>

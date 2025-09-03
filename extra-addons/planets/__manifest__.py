@@ -1,15 +1,17 @@
-# -*- coding: utf-8 -*-
 {
     'name': 'Planets',
     'description': 'planets info',
     'author': 'Eduard Montano',
-    'category': 'Base',
+    
+    # ✅ CATEGORÍA ÚNICA PARA PLANETS
+    'category': 'Productivity',  # ← Diferente a Sales
+    
     'version': '16.0.0.1',
-    'depends': ['base'], ## archivos o modelos dependientes algunas otras fucnionalidades
-    # 'data': [
-
-    #     'views/grades_course_views.xml',
-    # ], ## vistas
+    'depends': ['base'],
+    'data': [
+        'views/planets_menu.xml',
+        'security/ir.model.access.csv',
+    ],
     'license': 'AGPL-3',
     'application': True,
     'installable': True,

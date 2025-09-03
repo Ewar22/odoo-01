@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menú principal sin icono -->
+    <menuitem
+        id="planets_menu_root"
+        name="Planets"
+        sequence="10"
+    />
+    
+    <!-- Submenú también sin icono -->
+    <menuitem
+        id="planets_submenu" 
+        parent="planets_menu_root"
+        name="Gestión de Planetas"
+        sequence="10"
+    />
+</odoo>
