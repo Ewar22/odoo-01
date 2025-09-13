@@ -9,8 +9,12 @@
     'version': '16.0.0.1',
     'depends': ['base'],
     'data': [
-        'views/planets_menu.xml',
+        'security/groups.xml',
         'security/ir.model.access.csv',
+        'views/planets_views.xml',
+        'views/planets_menu.xml',
+        
+        
     ],
     'license': 'AGPL-3',
     'application': True,

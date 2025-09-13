@@ -1,0 +1,48 @@
+<odoo>
+    <!-- vista de la lista de los planetas creados -->
+    <record id="planets_tree" model="ir.ui.view">
+        <field name="name">planets.tree</field>
+        <field name="model">planets</field>
+        <field name="arch" type="xml">
+            <tree string="Planets">
+                <field name="name"/>
+                <field name="masa"/>
+                <field name="volumen"/>
+                <field name="distance_sun"/>
+                <field name="have_moons"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- vista del formulario para crear un nuevo registro -->
+    <record id="planets_form" model="ir.ui.view">
+        <field name="name">planets.form</field>
+        <field name="model">planets</field>
+        <field name="arch" type="xml">
+            <form string="Planets">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="masa"/>
+  
+                        </group>
+                        <group>
+                            <field name="volumen"/>
+                            <field name="distance_sun"/>
+                            <field name="have_moons"/>
+                        </group>
+                    </group>
+                    
+                </sheet>       
+            </form>
+        </field>    
+    </record>
+
+        <!-- action que hace que aparezca modelo en mi menu -->
+    <record id="planets_actions" model="ir.actions.act_window">
+        <field name="name">Planets</field>
+        <field name="res_model">planets</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

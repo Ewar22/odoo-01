@@ -11,7 +11,8 @@
     <menuitem
         id="planets_submenu" 
         parent="planets_menu_root"
-        name="Gestión de Planetas"
+        name="Gestion Planetas"
+        action="planets_actions"
         sequence="10"
     />
 </odoo>

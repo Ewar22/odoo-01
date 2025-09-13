@@ -1,5 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_planets_user,planets.user,model_planets,base.group_user,1,1,1,1
-access_planets_public,planets.public,model_planets,base.group_public,1,1,1,1
-access_planets_system,planets.system,model_planets,base.group_system,1,1,1,1
-access_planers_portal,planets.portal,model_planets,base.group_portal,1,1,1,1
+access_planets_spaceman,planet.user.access.spaceman,model_planets,planets.group_planets_spaceman,1,1,1,1
+access_planets_terrestrial,planet.user.access.terrestrial,model_planets,planets.group_planets_terrestrial,1,0,0,0

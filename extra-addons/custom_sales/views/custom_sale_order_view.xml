@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             
-            <!-- Agregar el campo priority después de date_order -->
+
             <xpath expr="//field[@name='date_order']" position="after">
                 <field name="priority" 
                        class="oe_inline"
